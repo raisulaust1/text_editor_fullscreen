@@ -207,7 +207,7 @@ frappe.ui.form.ControlTextEditor = class CustomTextEditor extends OriginalTextEd
 		if (!this.value) return;
 
 		this.$fullscreen_modal = $(`
-			<div class="modal fade show text-editor-fullscreen-modal" style="display: block;">
+			<div class="modal fade show text-editor-fullscreen-modal text-editor-fullscreen-modal--readonly" style="display: block;">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">

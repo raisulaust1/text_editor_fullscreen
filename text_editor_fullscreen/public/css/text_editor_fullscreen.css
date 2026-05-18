@@ -179,6 +179,15 @@
 	color: var(--text-color);
 }
 
+.text-editor-fullscreen-modal--readonly .modal-body {
+	padding-top: var(--padding-sm);
+	padding-bottom: var(--padding-sm);
+}
+
+.text-editor-fullscreen-modal--readonly .ql-container.ql-snow {
+	border-top: none;
+}
+
 .text-editor-fullscreen-modal .btn-close {
 	width: 32px;
 	height: 32px;
@@ -220,7 +229,11 @@
 .text-editor-fullscreen-modal .ql-editor.read-mode {
 	background: var(--fg-color) !important;
 	color: var(--text-color) !important;
-	padding: 1rem;
+	padding: 0 1rem;
+}
+
+.text-editor-fullscreen-modal .ql-editor.read-mode > *:first-child {
+	margin-top: 0 !important;
 }
 
 .text-editor-fullscreen-modal .ql-toolbar {
